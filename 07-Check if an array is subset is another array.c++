@@ -15,7 +15,8 @@ int main(){
     for(int i=0;i<m;i++){
         cin>>b[i];
     }
-    
+
+    //logic for inserting elements into set
     set<int>myset;
     for(int i=0;i<n;i++){
         myset.insert(a[i]);
@@ -38,5 +39,6 @@ int main(){
     return 0;
 
 }
+
 
 
