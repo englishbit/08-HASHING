@@ -8,6 +8,7 @@ int b[max]={-1};
 
 int main(){
     int n;
+    //logic for taking input 
     cin>>n;
     for(int i=0;i<n;i++){
         cin>>a[i];
@@ -18,6 +19,7 @@ int main(){
 
     map<int ,int>mymap;
 
+    //logic for main idea
     for(int i=0;i<n;i++){
         mymap[a[i]]++;
     }
@@ -45,3 +47,4 @@ int main(){
     return 0;
 
 }
+
