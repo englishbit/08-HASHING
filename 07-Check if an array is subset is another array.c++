@@ -21,7 +21,8 @@ int main(){
     for(int i=0;i<n;i++){
         myset.insert(a[i]);
     }
-    
+
+    //logic for main idea
     bool flag=true;
     for(int i=0;i<m;i++){
         if(myset.find(b[i])==myset.end()){
@@ -39,6 +40,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
