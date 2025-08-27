@@ -37,7 +37,7 @@ int main(){
         }
     }
 
-
+    //logic for output
     if(flag==true){
         cout<<"true"<<endl;
     }else{
@@ -47,4 +47,5 @@ int main(){
     return 0;
 
 }
+
 
