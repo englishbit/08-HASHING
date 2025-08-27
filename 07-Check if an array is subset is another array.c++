@@ -6,6 +6,7 @@ int a[max]={-1};
 int b[max]={-1};
 int main(){
     int n,m;
+    //logic for taking input
     cin>>n>>m;
 
     for(int i=0;i<n;i++){
@@ -37,3 +38,4 @@ int main(){
     return 0;
 
 }
+
