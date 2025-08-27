@@ -8,7 +8,7 @@ int main(){
     int n,m;
     //logic for taking input
     cin>>n>>m;
-
+    //logic for taking input arrays
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
@@ -38,4 +38,5 @@ int main(){
     return 0;
 
 }
+
 
