@@ -5,6 +5,7 @@ using namespace std;
 int a[max],b[max];
 int main(){
     int n;
+    //logic for taking input
     cin>>n;
     for(int i=0;i<n;i++){
         cin>>a[i];
@@ -13,11 +14,13 @@ int main(){
         cin>>b[i];
     }
     set<int>myset;
-    
+
+    //logic for inserting elements into set
     for(int i=0;i<n;i++){
         myset.insert(a[i]);
     }
 
+    //logic for main idea and output
     for(int i=0;i<n;i++){
         if(myset.find(b[i])!=myset.end()){
             cout<<b[i]<<" ";
@@ -27,3 +30,4 @@ int main(){
 
     return 0;
 }
+
