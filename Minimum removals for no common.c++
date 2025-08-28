@@ -6,6 +6,7 @@ int a[max];
 int b[max];
 int main(){
     int n,m;
+    //logic for taking input
     cin>>n>>m;
     for(int i=0;i<n;i++){
         cin>>a[i];
@@ -14,6 +15,7 @@ int main(){
         cin>>b[i];
     }
 
+    //logic for inserting elements into set
     set<int>myset;
     for(int i=0;i<n;i++){
         myset.insert(a[i]);
@@ -23,6 +25,7 @@ int main(){
     for(int i=0;i<m;i++){
         myset2.insert(b[i]);
     }
+    //logic for main idea
     int count=0;
     for(int num:myset){
         if(myset2.find(num)!=myset2.end()){
@@ -30,12 +33,8 @@ int main(){
         }
     }
     int minrmv=count+(myset.size()-count)+(myset2.size()-count);
+    //logic for output
     cout<<minrmv<<endl;
-
-
-
-
-
-
+    
     return 0;
 }
