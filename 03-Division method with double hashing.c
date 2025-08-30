@@ -5,7 +5,6 @@ int sec_hah(int key){
 }
 
 
-
 #define EMT=-1
 int main(){
          
@@ -20,14 +19,11 @@ int main(){
             return -1;
         }
         
-
         int arr[n];
         int key;
         int rslt_hsh;
 
-
         //logic for filling the array with -1
-
         for(int i=0;i<n;i++){
             arr[i]=EMT;
         }
@@ -40,7 +36,6 @@ int main(){
             int capacity=0;
             int step=sec_hsh(key);
             
-
             while(arr[rslt_hsh]!=EMT){
                 capacity++;
 
@@ -63,9 +58,7 @@ int main(){
 
         }
 
-
         //logic for printing hash table
-
         for(int k=0;k<n;k++){
             if(arr[k]!=EMT){
                 printf("%d ",arr[k]);
@@ -73,9 +66,6 @@ int main(){
                 printf("position %d is empty\n",k);
             }
         }
-
-
-
-
+    
     return 0;
 }
