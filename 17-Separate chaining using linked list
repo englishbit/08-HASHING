@@ -1,0 +1,48 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+#define MAX 100000
+
+struct node{
+    int data;
+    node* next;
+};
+
+node* hash[MAX]={nullptr};
+
+node* create(int data){
+    node* new_node=new node;
+    new_node->data=data;
+    new_node->next=nullptr;
+    return new_node;
+}
+
+void insert(int data,int index){
+    node* newnode=create(data);
+    newnode->next=hash[index];
+    hash[index]=newnode;
+}
+
+
+
+void hashing(int num,int n){
+    int index=num%n;
+    insert(num,index);
+
+}
+
+int main(){
+    int n,x;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>x;
+        hashing(x,n);
+    }
+
+
+
+
+
+
+    return 0;
+}
