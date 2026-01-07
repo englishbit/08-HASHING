@@ -1,0 +1,24 @@
+#include<iostream>
+#include<cstdlib>
+#include<vector>
+vector<vector<int>>hashtable;
+using namespace std;
+
+void insert(int num,int size){
+    int index=num%size;
+    hashtable[index].push_back(num);
+}
+
+int main(){
+
+    int n,x;
+    cin>>n;
+    hashtable.resize(n);
+    for(int i=0;i<n;i++){
+        cin>>x;
+        insert(x,n);
+    }
+
+
+    return 0;
+}
