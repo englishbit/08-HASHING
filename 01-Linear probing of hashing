@@ -2,6 +2,7 @@
 using namespace std;
 #define MAX 10000000
 int hash[MAX];
+//logic for insertion
 void insert(int x){
     int indx=x%MAX;
 
@@ -32,4 +33,5 @@ int main(){
 
 
     return 0;
+
 }
