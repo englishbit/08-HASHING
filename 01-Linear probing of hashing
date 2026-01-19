@@ -13,11 +13,12 @@ void insert(int x){
     
 }
 int main(){
-
+    
     for(int i=0;i<MAX;i++){
         hash[i]=-1;
     }
     int n;
+    //logic for taking input and calling insert function
     cin>>n;
     for(int i=0;i<n;i++){
         int x;
@@ -35,3 +36,4 @@ int main(){
     return 0;
 
 }
+
